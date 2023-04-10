@@ -180,14 +180,14 @@ main( int argc, char *argv[ ] )
 			float holecy = holecys[n];
 			float holecr = holecrs[n];
 
-			float da = Length(PinAx-HoleAx, PinAy-HoleAy);
-			if(da + PinAr <= HoleAr)
+			float da = Length(PinAx-holeax, PinAy-holeay);
+			if(da + PinAr <= holear)
 			{
-				float db = Length(PinBx-HoleBx, PinBy-HoleBy);
-				if( db + PinBr <= HoleBr)
+				float db = Length(PinBx-holebx, PinBy-holeby);
+				if( db + PinBr <= holebr)
 				{
-					float dc = Length(PinCx-HoleCx, PinCy-HoleCy);
-					if( dc + PinCr <= HoleCr)
+					float dc = Length(PinCx-holecx, PinCy-holecy);
+					if( dc + PinCr <= holecr)
                                 		numSuccesses++;
 				}
 			}
