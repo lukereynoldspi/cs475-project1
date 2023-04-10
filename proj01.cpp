@@ -206,8 +206,10 @@ main( int argc, char *argv[ ] )
 #ifdef CSV
         fprintf(stderr, ????? );
 #else
-        fprintf(stderr, "%2d threads : %8d trials ; probability = %6.2f ; megatrials/sec = %6.2lf\n",
-                NUMT, NUMTRIALS, 100.*probability, maxPerformance);
+       // OG print statement fprintf(stderr, "%2d threads : %8d trials ; probability = %6.2f ; megatrials/sec = %6.2lf\n",
+                // NUMT, NUMTRIALS, 100.*probability, maxPerformance);
+        fprintf(stderr, "%2d, %8d, %6.2f, %6.2lf\n",
+             NUMT, NUMTRIALS, 100.*probability, maxPerformance);
 #endif
 
 }
